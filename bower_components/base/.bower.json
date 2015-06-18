@@ -1,0 +1,15 @@
+{
+  "name": "base",
+  "homepage": "https://github.com/matthewhartman/base",
+  "version": "2.1.2",
+  "_release": "2.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.2",
+    "commit": "634f89bbc26f14fb7d8bed2406d7752750e79585"
+  },
+  "_source": "git://github.com/matthewhartman/base.git",
+  "_target": "~2.1.2",
+  "_originalSource": "base",
+  "_direct": true
+}
