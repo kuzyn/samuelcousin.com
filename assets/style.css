@@ -9,3 +9,15 @@ body {
 .header {
 	display: none;
 }
+
+.no-decoration {
+	text-decoration: none;
+}
+
+.white {
+	color: white;
+}
+
+.logo img {
+	position: relative;
+}
