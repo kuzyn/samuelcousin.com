@@ -1,0 +1,28 @@
+{
+  "name": "nsc",
+  "version": "0.0.9",
+  "description": "samuelcousin.com",
+  "main": "Gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-if": "^1.2.5",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-useref": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuasnowball/nsc.git"
+  },
+  "author": "joshuasnowball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuasnowball/nsc/issues"
+  },
+  "homepage": "https://github.com/joshuasnowball/nsc#readme"
+}

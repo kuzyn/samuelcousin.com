@@ -1,0 +1,128 @@
+.js #things {
+	opacity: 0;
+}
+
+.no-js #things {
+	opacity: 1;
+}
+
+.no-js .working-on-things {
+	display: none;
+}
+
+a {
+	color: black;
+}
+
+body {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+body canvas {
+	position: absolute;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	opacity: 0;
+}
+
+.links-row {
+	padding-top: 12px;
+}
+
+.links-row span {
+	opacity: 0.7;
+	padding-left: 4px;
+	padding-right: 4px;
+	transition: all linear 0.2s;
+}
+
+.links-row span:hover {
+	opacity: 1;
+}
+
+.logo img {
+	opacity: 0.9;
+	transition: all linear 0.2s;
+}
+
+.logo img:hover {
+	opacity: 1;
+}
+
+.no-decoration {
+	text-decoration: none;
+}
+
+.school-stuff {
+	padding-left: 2em;
+}
+
+#things a {
+	color: #585858;
+}
+
+.gt-header { 
+	display: none;
+}
+
+.gt-container {
+	border: none;
+	background: none;
+}
+
+.gt-activity-cnt {
+	background: none;
+	overflow: hidden;
+}
+
+.gt-activity {
+	border-top: none;
+}
+
+
+/***  CSS animations
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/* Rotate */
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
