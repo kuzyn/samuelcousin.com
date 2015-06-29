@@ -27,6 +27,19 @@ body canvas {
 	z-index: -10;
 	opacity: 0;
 }
+#things a, 
+#things a:visited {
+	text-decoration: none;
+	transition: all linear 0.2s;
+	color: #585858;
+}
+
+#things a:hover,
+#things p:hover a,
+#things li:hover a {
+	opacity: 1;
+	color: black;
+}
 
 .links-row {
 	padding-top: 12px;
@@ -58,10 +71,6 @@ body canvas {
 
 .school-stuff {
 	padding-left: 2em;
-}
-
-#things a {
-	color: #585858;
 }
 
 .gt-header { 
@@ -123,6 +132,6 @@ body canvas {
   transition-property: transform;
 }
 .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
-  -webkit-transform: rotate(4deg);
-  transform: rotate(4deg);
+  -webkit-transform: rotate(1deg);
+  transform: rotate(1deg);
 }
