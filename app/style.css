@@ -53,11 +53,11 @@ body canvas {
 }
 
 .links-row span:hover {
-	opacity: 1;
+	-webkit-filter: invert(1);
 }
 
 .logo img {
-	opacity: 0.9;
+	-webkit-filter: invert(0);
 	transition: all linear 0.2s;
 }
 
