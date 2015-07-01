@@ -20,8 +20,7 @@ body {
 }
 
 body canvas {
-	position: absolute;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: -10;
@@ -39,6 +38,11 @@ body canvas {
 #things li:hover a {
 	opacity: 1;
 	color: black;
+}
+
+#things .awards,
+#things .projects {
+	
 }
 
 .links-row {
@@ -70,7 +74,7 @@ body canvas {
 }
 
 .school-stuff {
-	padding-left: 2em;
+	/*padding-left: 2em;*/
 }
 
 /*** emoji.js ***/
