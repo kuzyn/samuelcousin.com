@@ -8,7 +8,7 @@ var uglify     = require('gulp-uglify');
 
 gulp.task('clean:dist', function(cb) {
 	del.sync([
-		// here we use a globbing pattern to match everything inside the `mobile` folder
+		// globbing pattern to match everything inside the `mobile` folder
 		'dist/**/*'
 	]);
 	cb();
