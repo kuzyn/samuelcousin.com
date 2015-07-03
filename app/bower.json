@@ -14,13 +14,10 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "Hover": "~2.0.2",
-    "Hyphenator": "~5.0.1",
     "base": "~2.1.2",
     "flip": "~1.0.1",
     "fontawesome": "~4.3.0",

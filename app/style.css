@@ -116,10 +116,12 @@ body canvas {
 	background-attachment: local, local, scroll, scroll;
 }
 
+.gt-scrollbar::-moz-scrollbar-thumb,
 .gt-scrollbar::-webkit-scrollbar-thumb {
 	background: rgba(255,255,255,0.4) !important; 
 }
 
+.gt-scrollbar::-moz-scrollbarthumb-vertical,
 .gt-scrollbar::-webkit-scrollbar-track-piece {
  background: transparent; 
  border: none; 
