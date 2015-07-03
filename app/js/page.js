@@ -7,6 +7,8 @@ Github.userActivity({
   limit: 6
 });
 
+$('#bio h2').hyphenate('en-us');
+
 // Get dimention for trianglify
 windowWidth = $( window ).width();
 windowHeight = $( window ).height();
@@ -32,8 +34,6 @@ $(function() {
   // Generate & append the background
   document.body.appendChild(pattern.canvas());
 
-  // Intercept emojis  
-  emojify.run();
 
   // Custom scrollbar
   $(window).load(function(){
@@ -43,6 +43,9 @@ $(function() {
       mouseWheel:{ preventDefault: true }
     });
   });
+
+  // Intercept emojis  
+  emojify.run();
   
   // Fade in stuff
   $( "canvas" ).animate({ opacity: 0.50 }, 2000, function() {
