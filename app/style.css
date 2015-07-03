@@ -104,29 +104,6 @@ body canvas {
 	border-top: none;
 }
 
-/* Tiny bit of http://lea.verou.me/2012/04/background-attachment-local/ */
-.gt-scrollbar {
-	background:		
-		/* Shadows */
-		radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
-	background-repeat: no-repeat;
-	background-size: 100% 20px, 100% 20px, 100% 14px, 100% 14px;
-	
-	/* Opera doesn't support this in the shorthand */
-	background-attachment: local, local, scroll, scroll;
-}
-
-.gt-scrollbar::-moz-scrollbar-thumb,
-.gt-scrollbar::-webkit-scrollbar-thumb {
-	background: rgba(255,255,255,0.4) !important; 
-}
-
-.gt-scrollbar::-moz-scrollbarthumb-vertical,
-.gt-scrollbar::-webkit-scrollbar-track-piece {
- background: transparent; 
- border: none; 
-}
-
 /***  CSS animations ***/
 
 /* Float */
