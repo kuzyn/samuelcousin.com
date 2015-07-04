@@ -60,6 +60,11 @@ body canvas {
 	opacity: 1;
 }
 
+.links-row .nav-phone,
+.links-row .nav-website {
+	display: none;
+}
+
 .logo img {
 	opacity: 0.9;
 	transition: all linear 0.2s;
@@ -69,12 +74,24 @@ body canvas {
 	opacity: 1;
 }
 
+.nav-phone {
+
+}
+
 .no-decoration {
 	text-decoration: none;
 }
 
 .school-stuff {
 	/*padding-left: 2em;*/
+}
+
+.things-ive-done {
+	display: none;
+}
+
+.uni-text {
+	font-size: 16px;
 }
 
 /*** emoji.js ***/
@@ -146,4 +163,197 @@ body canvas {
 .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
   -webkit-transform: rotate(1deg);
   transform: rotate(1deg);
+}
+
+
+/* When printing */
+@media print {
+
+	p,
+	a,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: black !important;
+	}
+	p {
+		font-size: 14px;
+	}	
+	h2 {
+		font-size: 22px;
+	}		
+	h3 {
+		font-size: 20px;
+		margin-top: 0.75em;
+	}	
+	h4 {
+		font-size: 18px;
+		margin-top: 0.5em;
+	}
+	.logo span a {
+		font-style: 12px;
+	}
+
+
+	.logo img {
+		width: 20%;
+		float: right;
+	}
+
+	.logo .links-row {
+		width: 70%;
+		float: left;
+	}
+
+	.logo .links-row i {
+		width: 2em;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a[href]:after {
+	content:attr(href);
+	padding-left: 1em;
+	}
+
+	.links-row span {
+		display: block;
+	}
+
+	.links-row {
+		text-align: left;
+	}
+
+	.logo-link {
+		height: 0;
+	}	
+
+	.logo-link[href]:after {
+	content: "";
+	}
+
+	.links-row .nav-phone,
+	.links-row .nav-website {
+		display: inline-block;
+	}
+
+	#things a[href]:after {
+		content:"";
+		padding-left: 0;
+	}
+
+	.retention-projects {
+		display: none;
+	}
+
+	.things-i-know,
+	.things-i-wanna-know {
+		width: 100%
+	}
+
+	.things-i-made-happen {
+		width: 100%;
+	}	
+
+	.things-i-made-happen .schools {
+		width: 45%;
+		float: right;
+	}	
+	.things-i-made-happen .awards {
+		width: 55%;
+		float: left;
+	}	
+
+	.things-i-made-happen .projects {
+		width: 100%;
+		float: left;
+	}	
+
+	.things-i-made-happen .projects .col-6{
+		width: 100%;
+		float: left;
+	}	
+
+	.things-i-made-happen .projects a[href]:after {
+	content: " (" attr(medium) ")" !important;
+	font-size: 10px;
+	}
+
+	.no-margin-print {
+		margin: !important;
+	}
+
+	.things-ive-done {
+		display: inline-block;
+		width: 90%;
+	}
+
+/*	.links-row span,
+	.links-row a,
+	.links-row a:visited,
+	.links-row i {
+		color: black !important;
+		opacity: 1 !important;
+	}*/
+
+	#bio .part-1 {
+		margin-top: 0.5em;
+	}
+
+	.breakpoint {
+		page-break-before: always;
+	}
+
+	.things-i-know,
+	.things-i-wanna-know, {
+		float: left !important;
+	}
+
+	.things-i-made-happen  {
+		float: left;
+	}
+
+	.schools {
+		padding-top: 1.33em
+	}
+
+	.hide-print {
+		display: none;
+	}
+
+	.schools {
+		padding: none;
+	}
+
+	.footer {
+		margin-top: 25px;
+	}
+
+	.projects p {
+		font-size: 16px;
+	}
+
+	.schools {
+		padding-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.show-print {
+		display: inline-block;
+	}
+
+	canvas,
+	.links-row .nav-cv,
+	.links-row .nav-portfolio,
+	.links-row .nav-writing,
+	#bio .part-2,
+	.working-on-things {
+		display: none;
+	}
 }
