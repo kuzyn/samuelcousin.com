@@ -26,6 +26,11 @@ body canvas {
 	z-index: -10;
 	opacity: 0;
 }
+
+#bio {
+	padding-bottom: 1em;
+}
+
 #things a, 
 #things a:visited {
 	text-decoration: none;
@@ -197,6 +202,9 @@ body canvas {
 		font-style: 12px;
 	}
 
+	#bio {
+	padding-bottom: 0em;
+	}
 
 	.logo img {
 		width: 20%;
