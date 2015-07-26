@@ -1,8 +1,8 @@
 
 // Github activity
 Github.userActivity({
-  username: "joshuasnowball",
-  OAuth: '',
+  username: "kuzyn",
+  OAuth: '95e7ea8f9b7feb6c2cb9b312c615bf14b09ace94',
   selector: ".github-activity",
   limit: 6
 });
