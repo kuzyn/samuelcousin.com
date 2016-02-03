@@ -28,5 +28,8 @@
     "jquery-mousewheel": "~3.1.12",
     "emojify.js": "~1.0.5",
     "malihu-custom-scrollbar-plugin": "~3.0.9"
+  },
+  "resolutions": {
+    "jquery": ">=1.6"
   }
 }

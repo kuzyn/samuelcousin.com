@@ -9,7 +9,18 @@ var uglify     = require('gulp-uglify');
 gulp.task('clean:dist', function(cb) {
 	del.sync([
 		// globbing pattern to match everything inside the `dist` folder
-		'dist/**/*'
+		'dist/**/*',
+		'assets/**/*',
+		'index.html'
+	]);
+	cb();
+});
+
+gulp.task('clean:root', function(cb) {
+	del.sync([
+		// globbing pattern to match everything inside the `dist` folder
+		'assets',
+		'index.html'
 	]);
 	cb();
 });
@@ -48,5 +59,14 @@ gulp.task('minify-css-js', function() {
 		.pipe(gulp.dest('dist'));
 });
 
+// Move files to root
+gulp.task('dist-to-root', ['clean:root'], function() {
+	gulp.src('dist/assets/**/*')
+	.pipe(gulp.dest('./assets'));
+	gulp.src('dist/index.html')
+	.pipe(gulp.dest('./'));
+
+});
+
 // Default task
-gulp.task('default', ['clean:dist', 'minify-css-js', 'assets', 'fonts']);
+gulp.task('default', ['clean:root', 'clean:dist', 'minify-css-js', 'assets', 'fonts']);
